@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click",function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })
+});
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="body">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">           </a></li>
+                    <li class="item"><a href="portfolio.html">Home</a></li>
+                    <li class="item"><a href="about.html">About</a></li>
+                    <li  class="item"><a href="edu.html">Education</a></li>
+                    <li  class="item"><a href="acheiv.html">Achievement</a></li>
+                    <li  class="item"><a href="cont.html">Contact</a></li>
+                    <li class="toggle"><a href="#"><span class="bars"></span></a></li>
+                </ul>
+            </nav>
+            <div class="para1">
+              <h2> HI THERE!</h2>
+               <h1> I AM <span>SNEHA M</span></h1> 
+               <p>Hi Im Sneha.An Final year Computer Science student of Farook college.As a computer science student,my aim is to explore all areas of this field.My goal is to make me more knowledgeable.Looking for great opportunity to improve my career and enrich my profile. </p>
+            </div>
+            <div class="about">
+                <a href="about.html" ><b>About Me</b></a>
+            </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievement</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click",function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })
+});
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="body">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">           </a></li>
+                    <li class="item"><a href="portfolio.html">Home</a></li>
+                    <li class="item"><a href="about.html">About</a></li>
+                    <li  class="item"><a href="edu.html">Education</a></li>
+                    <li  class="item"><a href="acheiv.html">Achievement</a></li>
+                    <li  class="item"><a href="cont.html">Contact</a></li>
+                    <li class="toggle"><a href="#"><span class="bars"></span></a></li>
+                </ul>
+            </nav>
+            <div class="acheiv">
+                <h1>My <span>Achieivements</span></h1><hr>
+                <img class="pic" src="pic.jpeg">
+            </div>
+        </div>
+    </div>

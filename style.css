@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.body{
+    width: 100%;
+    height: 745px;
+   background-color:black;
+   font-family:sans-serif;
+   
+}
+.img{
+    border-radius: 500px;
+    height: 150px;
+    padding: 15px 5px;
+    
+
+
+}
+.head{
+    color:aliceblue;
+    
+}
+.sub_head{
+    color: aliceblue;
+}
+    
+nav{
+    background:rgba(0, 0, 0, 0.171);
+    padding: 5px 20px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration:underline;
+}
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu li a{
+    display: block;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle{
+    order: 1;
+}
+.item{
+    width: 100px;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+.item.active{
+    display: block;
+}
+.toggle{
+    cursor: pointer;
+}
+.bars{
+    background:aqua;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+.bars::before,.bars::after{
+    background: aqua;
+    display: inline-block;
+    height: 2px;
+    width: 18px;
+    position:absolute;
+    content: "";
+
+}
+.bars::before{
+    top:5px;
+}
+.bars::after{
+    top:-5px;
+}
+@media all and(min-width:468px){
+    .menu{
+        justify-content: center;
+
+    }
+    .logo{
+        flex: 1;
+    }
+    .toggle{
+        order: 2;
+    }
+}
+.para1{
+    color: aliceblue;
+    padding: 148px 40px 0px 200px
+}
+.para1 p{
+    font-size: 25px;
+    margin-top: 25px;
+}
+.para1 h1{
+    margin-top: 10px;
+}
+.para1 h1 span{
+    color: aqua;
+}
+.about{
+    margin: 40px 0px 10px 220px;
+    background-color:aqua;
+    height: 35px;
+    border-radius: 25px;
+    width: 102px;
+    padding: 10px ;
+    
+}
+.body h1{
+    color: aliceblue;
+    padding: -1px 28px 26px 655px;
+    font-size: 45px;
+}
+.body h1 span{
+    color: aqua;
+}
+.info h3{
+    color: aliceblue;
+    margin: 70px;
+}
+.info h3 span{
+    color: aqua;
+}
+.cv{
+    margin: 40px 0px 10px 67px;
+    background-color:aqua;
+    height: 35px;
+    border-radius: 25px;
+    width: 200px;
+    padding:  16px 82px 12px 34px ;
+
+}
+.down{
+    margin-left: 10px;
+    margin-top:10px;
+}
+.edu_head{
+    text-align: center;
+
+}
+.topic_left{
+    
+    color:aliceblue;
+    padding: 200px ;
+    margin-left:-1000px;
+    margin-top: 45px;
+}
+.topic_center{
+    color:aliceblue;
+    padding: 0px ;
+    margin-left: 1000px;
+    margin-top: -100px;
+    
+}
+.topic_right{
+    color:aliceblue;
+    padding: 0px ;
+    margin-left: 800px;
+    margin-top: -110px;
+}
+.topic_left h3{
+    font-size: 25px;
+}
+.topic_left h6{
+    font-size: 15px;
+}
+.topic_left h{
+    font-size: 15px;
+    background-color: aqua;
+    border-radius: 25px;
+    padding: 10px;
+
+}
+.acheiv{
+    text-align: center;
+}
+.pic{
+    height: 450px;
+    margin-top: 50px;
+}
+.contact{
+    text-align: center;
+}
+.details{
+    color: aliceblue;
+    padding: 50px;
+    font-size: 25px;
+    margin-top: 50px;
+
+}
+.details img{
+    background-color: aqua;
+}
+

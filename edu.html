@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click",function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })
+});
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="body">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">           </a></li>
+                    <li class="item"><a href="portfolio.html">Home</a></li>
+                    <li class="item"><a href="about.html">About</a></li>
+                    <li  class="item"><a href="edu.html">Education</a></li>
+                    <li  class="item"><a href="acheiv.html">Achievement</a></li>
+                    <li  class="item"><a href="cont.html">Contact</a></li>
+                    <li class="toggle"><a href="#"><span class="bars"></span></a></li>
+                </ul>
+            </nav>
+            <div class="edu_head">
+                <h1>My <span> Education</span></h1><hr>
+                <div class="topic">
+                    <div class="topic_left">
+                        <h>2019-2022</h>
+                        <br><br>
+                        <h3><b>Bsc Computer Science</b></h3>
+                        <br>
+                        <h6>Farook college(Autonomous)</h6>
+                        <div class="topic_center">
+                        <h>2017-2018</h>
+                        <br><br>
+                        <h3><b>Higher Secondary (Bio)</b></h3>
+                        <br>
+                        <h6>Farook college Higher Secondary School</h6>
+                            <div class="topic_right">
+                                <h>2016</h>
+                                <br><br>
+                                <h3><b>High School</b></h3>
+                                <br>
+                                <h6>Venerni E.M.H.S.School</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
